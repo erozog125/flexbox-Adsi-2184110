@@ -1,0 +1,65 @@
+Flexbox: Es una nueva opción para maquetar nuestra web.
+
+Se llama Flex porque tenemos un contenedor, llamado contenedor Flex, que es el elemento que contiene la propiedad display:flex.
+Desde ese contenedor vamos a poder especificar la alineación de los elementos que hay dentro, el tamaño de los elementos que contienen y distribuir el espacio restante que hay entre los elementos del contenedor Flex, y todo esto en una sola dirección, ya sea una horizontal o vertical. Es decir, podemos distribuir los elementos que contiene la etiqueta sin poner nada dentro de esos elementos.
+
+
+Regla 1:
+* Para que  funcione debe existir un padre y por lo menos un hijo.
+*Con solo agregar display flex en el padre suceden dos cosas visuales:
+1. El ancho de sus hijos depende de su contenido
+2. el alto de sus hijos depende del tamaño de su contenedor
+
+Regla 2:
+* El flex container tiene dos ejes:
+
+------------------------------------------------------------
+|                           .                              |
+|             Flex Container(Contenedor Padre)             |
+|                           .                              |
+|                           .                              |
+|              |-------| |-------| |-------|               |
+|              | Item  | |  Item | | Item  |               |
+|..............| hijo  | |  hijo | | hijo  |...............|
+|              |-------| |-------| |-------|               |
+|                           .                              |
+|                           .                              |
+|                           .                              |
+|                           .                              |
+------------------------------------------------------------
+
+Eje principal(X)
+Eje Secundario(Y)
+
+//(Con flex direction determino la orientación del eje principal)
+
+Regla 3:
+* Podemos modificar el eje principal con la propiedad flex-direction:
+1. Row por defecto, hijos en eje horizontal.
+2. column, sus hijos en eje vertical.
+//SON LAS DOS QUE MÁS SE USAN
+
+Regla 4:
+
+* Podemos permitir el salto de columnas con flex-Wrap, es decir
+
+flex-wrap: wrap(wrap1)
+flex-wrap: nowrap(wrap2)
+
+Regla 5:
+
+* Alineamos los items(hijos) cpn propiedad: justify-content aplicado al container(componente padre).
+
+justify-content: center(just1)
+justify-content: end(just2)
+justify-content: flex-end(just3)
+justify-content: flex-start(just4)
+justify-content: space-around(just5)
+justify-content: space-between(just6)
+justify-content: space-evenly(just7)
+
+* Regla 6:
+Para alinear los ítems(hijos) usamos propiedad alig-items(imagen alignItems)
+
+* Regla 7:
+Para alinear los ítems(hijos) de forma individual usando align-self pero sobre el eje secundario:(Imagen Align-Self)

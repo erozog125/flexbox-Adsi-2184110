@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(1, 66, 97);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-parent {
+  width: 40em;
+  height: 40em;
+  background-color: rgba(0, 48, 53, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgb(107, 207, 238);
+}
+
+h1 {
+  color: aliceblue;
+  font-style: italic;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+}
+
+.cards {
+  width: 100%;
+  display: flex;  
+}
+
+.cards div {
+  width: 30%;
+  height: 10em;
+  border: groove 5px #e20d49;
+  margin: 1em; 
+  border-radius: 10px 10px 0 0;
+  background-color: #ffffff; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+  border: 10px 10px;
+  height: 50%;
+  object-fit: cover;
+}

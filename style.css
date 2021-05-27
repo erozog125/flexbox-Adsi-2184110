@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(1, 66, 97);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-parent {
+  width: 40em;
+  height: 40em;
+  background-color: rgb(32, 172, 253);    
+  cursor: pointer;
+  display: flex; 
+  justify-content: space-between;   
+}
+
+.container-son1, .container-son2, .container-son3 {
+  width: 25%;
+  height: 25%;
+  background: rgb(78, 250, 170);
+}
+
+.container-son2 {
+  background-color: brown;  
+  align-self: center;
+}
+
+.container-son3 {
+  background-color: chartreuse;
+  align-self: flex-end;  
+}
+
+.excercise a {
+  text-decoration: none;
+  color: aliceblue;
+  background: rgb(80, 92, 88);
+  border-radius: 10px;
+}
+
+.container-son2,
+.container-son1,
+.container-son3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: 3em;
+}
+
+
+
